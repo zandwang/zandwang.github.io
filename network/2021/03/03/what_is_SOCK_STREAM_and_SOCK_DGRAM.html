@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="TCP和UDP的一些区别" />
 <script type="application/ld+json">
-{"dateModified":"2021-03-03T03:35:49+08:00","datePublished":"2021-03-03T03:35:49+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"zand.wang/network/2021/03/03/what_is_SOCK_STREAM_and_SOCK_DGRAM.html"},"description":"TCP 一般使用SOCK_STREAM，UDP一般使用SOCK_DGRAM","@type":"BlogPosting","url":"zand.wang/network/2021/03/03/what_is_SOCK_STREAM_and_SOCK_DGRAM.html","headline":"TCP和UDP的一些区别","@context":"https://schema.org"}</script>
+{"url":"zand.wang/network/2021/03/03/what_is_SOCK_STREAM_and_SOCK_DGRAM.html","headline":"TCP和UDP的一些区别","dateModified":"2021-03-03T03:35:49+08:00","datePublished":"2021-03-03T03:35:49+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"zand.wang/network/2021/03/03/what_is_SOCK_STREAM_and_SOCK_DGRAM.html"},"description":"TCP 一般使用SOCK_STREAM，UDP一般使用SOCK_DGRAM","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="zand.wang/feed.xml" title="zand's blog" /></head>
 <body><header class="site-header" role="banner">
@@ -60,6 +60,13 @@
   <li>TCP鲁棒性更好，有更多检查，UDP较少</li>
 </ul>
 
+<p>在编写socket程序时，一般有如下代码</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">serv_sock</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">PF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+<p>AF = Address Family
+PF = Protocol Family
+这俩可认为时相同的</p>
+
   </div><a class="u-url" href="/network/2021/03/03/what_is_SOCK_STREAM_and_SOCK_DGRAM.html" hidden></a>
 </article>
 
@@ -77,7 +84,7 @@
           <li class="p-name">zand&#39;s blog</li><li><a class="u-email" href="mailto:zand.wang@foxmail.com">zand.wang@foxmail.com</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/zand"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">zand</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/zandwang"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">zandwang</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
