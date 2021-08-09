@@ -24,7 +24,7 @@ description: zand
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "zand.wang" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: zand
-github_username:  zand
+github_username:  zandwang
 
 # Build settings
 theme: minima
