@@ -5,6 +5,8 @@ date:   2021-08-09 03:35:49 +0800
 categories: python
 ---
 
+> 本文为译文，原文地址：https://notes.eatonphil.com/writing-a-simple-json-parser.html
+
 编写一个JSON解析器是熟悉解析技术最简单的方法。它的格式非常简单。它是递归定义，所以与解析Brainfuck(一门深奥的编程语言，译者注)相比，解析JSON只是一点轻微挑战；并且你可能也在用JSON。除了最后一点，解析Scheme(一门函数语言)的S表达式可能是一项更简单的任务。
 
 如果你只是想看下pj库的代码，请从github上检出

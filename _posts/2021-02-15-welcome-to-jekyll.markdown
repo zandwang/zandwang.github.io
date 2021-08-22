@@ -16,3 +16,10 @@ jekyll和hexo等对图片的支持都不好，尤其是要权衡本地preview md
 买了个便宜的域名，参考了[A Guide Of Making Your Personal Blog 系列](https://sketchk.xyz/2017/03/24/A-Guide-Of-Making-Your-Personal-Blog-Part-3/)
 有些重要的地方记录下来
 ![](2021-02-15-welcome-to-jekyll/image/2021-02-15-18-31-28.png)
+
+
+本地预览博客内容：`bundle exec jekyll serve`
+本地编译: `bundle exec jekyll build`
+
+为了使用两个github账号，可以搞两个ssh密钥，在`~/.ssh/config`中配置不同的host
+`ssh-all ~/.ssh/<private_key_file>`加载所有私钥
